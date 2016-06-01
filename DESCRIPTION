@@ -1,0 +1,10 @@
+Package: SpectralPatterns
+Type: Package
+Title: Detects single spectra patterns on multicomponent infrared spectra of wavelengths 500-4000 cm-1.
+Version: 1.0
+Date: 2016-06-01
+Author: Najla Al-Ariefy
+Maintainer: Najla Al-Ariefy <najlaalariefy@gmail.com>
+Description: 
+License: GPL3
+RoxygenNote: 5.0.1.9000
