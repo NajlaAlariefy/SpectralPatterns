@@ -1,19 +1,9 @@
 # Pattern Detection of Single Spectra on their Multi-components
 
-## Definition & Scope
-Infrared spectroscopy-the study of interaction between infrared light and matter[11]- has played an important role in the progress of biological analysis of cells in recent years. It permits the detection of molecules and their concentrations through the analysis of the spectrum. Fourier Transform Infrared spectroscopy (FTIR) is a technique of infrared spectroscopy that registers the absorption or emission of infrared light from a solid, liquid or gas with the advantages of high wavenumber precision, shorter scanning time (due to its multiplexing technique), and a high signal-to-noise ratio[11][9].
-FTIR spectroscopy is deemed a reliable tool of bio-analysis [9] mainly due to its capacity to detect signatures of the composition of the component [7], enabling the inference of components from biological samples. Despite the existence of artifacts and noise in the sample[11] it is widely used for its noninvasiveness, low cost and ease of sample preparation [2]. In recent years, FTIR has been used in many applications for detecting cancer [13] [3], classifying or exploring the bio- diversity of a sample [5] [4] (detecting healthy/diseased in citrus greening)[10], and the study of biological fluids (i.e. blood, urine, etc.)[1][8].
-Spectral searching is a powerful approach that enables the prompt recogni- tion of a spectrum with unknown components using a database of spectra. Its goal is to analyze a given spectrum to try to determine the most similar spectra – hence discerning its most probable composition. 
-
-[Ghada Badr and Najla Al-Ariefy. Top-Down Correlation-Based Pattern Analysis and Feature Selection for multi-component FTIR Spectra. 9h International Conference on Bioinformatics and Computational Biology (BICOB), Honolulu, Hi, USA, March 20-27, 2017.]()
-## Method 
-For detecting patterns made by single component spectra on their multicomponent(s) spectra, there are three main phases after data acquisition (Fig 1.): preprocessing, feature extraction, and feature selection using correlation for pattern detection.
-
-
-
-
 
 ## Documentation
+This is a package developed for R that will detect patterns of multi-component spectra and visualizes them for proof of concept. 
+
 ### Description
 This function will take in a set of spectra (single components, and their respective multi-components) and return patterns detected based on correlation results of three extracted features (means, variance, and turn-points).
 
@@ -24,6 +14,21 @@ spectralPatterns(spectra)
 
 ### Arguments
 *spectralPatterns* accepts a dataframe of spectra, this version accepts three-bases only. They should be organized as follows: C1, C2, C3, C1+C2, C1+C3, C2+C3, C1+C2+C3}
+
+
+## Definition & Scope
+Infrared spectroscopy-the study of interaction between infrared light and matter[11]- has played an important role in the progress of biological analysis of cells in recent years. It permits the detection of molecules and their concentrations through the analysis of the spectrum. Fourier Transform Infrared spectroscopy (FTIR) is a technique of infrared spectroscopy that registers the absorption or emission of infrared light from a solid, liquid or gas with the advantages of high wavenumber precision, shorter scanning time (due to its multiplexing technique), and a high signal-to-noise ratio[11][9].  
+
+FTIR spectroscopy is deemed a reliable tool of bio-analysis [9] mainly due to its capacity to detect signatures of the composition of the component [7], enabling the inference of components from biological samples. Despite the existence of artifacts and noise in the sample[11] it is widely used for its noninvasiveness, low cost and ease of sample preparation [2]. In recent years, FTIR has been used in many applications for detecting cancer [13] [3], classifying or exploring the bio- diversity of a sample [5] [4] (detecting healthy/diseased in citrus greening)[10], and the study of biological fluids (i.e. blood, urine, etc.)[1][8].  
+Spectral searching is a powerful approach that enables the prompt recognition of a spectrum with unknown components using a database of spectra. Its goal is to analyze a given spectrum to try to determine the most similar spectra – hence discerning its most probable composition. 
+
+[Ghada Badr and Najla Al-Ariefy. Top-Down Correlation-Based Pattern Analysis and Feature Selection for multi-component FTIR Spectra. 9h International Conference on Bioinformatics and Computational Biology (BICOB), Honolulu, Hi, USA, March 20-27, 2017.]()
+## Method 
+For detecting patterns made by single component spectra on their multicomponent(s) spectra, there are three main phases after data acquisition (Fig 1.): preprocessing, feature extraction, and feature selection using correlation for pattern detection.
+
+
+
+
 
 
 ## References
